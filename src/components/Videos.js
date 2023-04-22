@@ -1,21 +1,20 @@
 import { Button, Heading, Stack, Text, VStack } from '@chakra-ui/react';
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 
 const Videos = () => {
-    const videosArr=[
-        "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-	"https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-	"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-	"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-	"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
-	"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-	"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
-	"https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.jpg",
-	"https://storage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
-	"https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
-
-    ]
-const[VideoSrc,setVideoSrc] =useState(videosArr[0])
+  const videosArr = [
+    'https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+    'https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+    'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+    'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+    'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
+    'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
+    'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4',
+    'https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.jpg',
+    'https://storage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
+    'https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
+  ];
+  const [VideoSrc, setVideoSrc] = useState(videosArr[0]);
 
   return (
     <Stack direction={['column', 'row']} h={'100vh'}>
@@ -42,13 +41,15 @@ const[VideoSrc,setVideoSrc] =useState(videosArr[0])
         spacing={'8'}
         overflowY={'auto'}
       >
-        {videosArr.map((item,index)=>(      
-        <Button variant={'ghost'} colorScheme={'purple'} onClick={()=>setVideoSrc(item)}>
+        {videosArr.map((item, index) => (
+          <Button
+            variant={'ghost'}
+            colorScheme={'purple'}
+            onClick={() => setVideoSrc(item)}
+          >
             Lecture {index + 1}
-        </Button>
-
+          </Button>
         ))}
-
       </VStack>
     </Stack>
   );
