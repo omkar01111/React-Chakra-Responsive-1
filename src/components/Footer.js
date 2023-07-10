@@ -52,15 +52,15 @@ const Footer = () => {
          
         </VStack>
 
-        <VStack width={'full'}>
+            <VStack width={'full'}>
           <Heading size={'md'} textTransform={'unset'}>
             Social Media
           </Heading>
           <Button variant={'link'} colorScheme={'white.600'}>
-            <a target={'_blank'} href="https://www.youtube.com/watch?v=b50zSyLiCYQ&t=12346s">Youtube</a>
+            <a target={'_blank'} href="https://www.linkedin.com/in/omkar-more-599923203/">Linkedin</a>
           </Button>
           <Button variant={'link'} colorScheme={'white.600'}>
-            <a target={'_blank'} href="https://instagram.com/byte.crafters?igshid=ZDdkNTZiNTM=">Instagram </a>
+            <a target={'_blank'} href="https://www.instagram.com/omkar_more07/?igshid=NGExMmI2YTkyZg%3D%3D">Instagram </a>
           </Button>
           <Button variant={'link'} colorScheme={'white.600'}>
             <a target={'_blank'} href="https://github.com/omkar01111">GitHub</a>
